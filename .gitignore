@@ -1,1 +1,25 @@
 .codegraphy/*
+cat << 'EOF' > .gitignore
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packages
+build/
+dist/
+*.egg-info/
+
+# macOS system files
+.DS_Store
+EOF
